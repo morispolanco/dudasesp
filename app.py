@@ -73,6 +73,7 @@ if user_query:
             2. Proporciona ejemplos prácticos y claros.
             3. Ofrece recomendaciones basadas en la RAE y Fundéu.
             4. Cuando el usuario se refiera a la "raya", entiende que se refiere al signo de puntuación: —.
+            5. Asegúrate de que no haya espacios entre la raya y las palabras que la rodean, tal como lo establece la RAE.
             """
 
             # Construir el payload
