@@ -116,3 +116,13 @@ if user_query:
 
         except Exception as e:
             st.error(f"❌ Ocurrió un error: {e}")
+
+# Footer con Copyright y enlace
+st.markdown(
+    """
+    <div style="text-align: center; margin-top: 50px; font-size: 0.9em; color: #666;">
+        <p>Copyright © 2025 <a href="https://hablemosbien.org" target="_blank">Hablemos bien</a></p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
