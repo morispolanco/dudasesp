@@ -55,7 +55,7 @@ if user_query:
     with st.chat_message("user"):
         st.markdown(user_query)
 
-    with st.spinner("🔄 Procesando tu consulta..."):
+    with st.spinner("🔄 Procesando tu consulta."):
         try:
             # Recuperar la clave de API desde los secretos
             api_key = st.secrets["klusterai"]["api_key"]  # Asegúrate de tener la clave API en Streamlit secrets
