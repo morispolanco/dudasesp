@@ -55,7 +55,7 @@ if user_query:
     with st.chat_message("user"):
         st.markdown(user_query)
 
-    with st.spinner("🔄 Procesando tu consulta."):
+    with st.spinner("🔄 Procesando tu consulta..."):
         try:
             # Recuperar la clave de API desde los secretos
             api_key = st.secrets["klusterai"]["api_key"]  # Asegúrate de tener la clave API en Streamlit secrets
@@ -72,6 +72,7 @@ if user_query:
             1. Responde preguntas relacionadas con gramática, sintaxis, semántica y pragmática del español.
             2. Proporciona ejemplos prácticos y claros.
             3. Ofrece recomendaciones basadas en la RAE y Fundéu.
+            4. Cuando el usuario se refiera a la "raya", entiende que se refiere al signo de puntuación: —.
             """
 
             # Construir el payload
