@@ -16,7 +16,7 @@ st.title("🗨️ Dudas y dificultades del español")
 # Barra lateral con información (opcional)
 st.sidebar.header("Acerca de esta aplicación")
 st.sidebar.markdown("""
-Bienvenido al **chatbot de Dudas y dificultades del español**. Este asistente utiliza el modelo `klusterai/Meta-Llama-3.1-8B-Instruct-Turbo` para responder tus preguntas sobre gramática, sintaxis, literatura y otros aspectos relacionados con el idioma español.
+Bienvenido al **chatbot de Dudas y dificultades del español**. Este asistente utiliza el modelo `klusterai/Meta-Llama-3.1-405B-Instruct-Turbo` para responder tus preguntas sobre gramática, sintaxis, literatura y otros aspectos relacionados con el idioma español.
 
 ### ¿Cómo funciona?  
 1. Escribe tu consulta en el campo de texto.  
@@ -78,7 +78,7 @@ if user_query:
 
             # Construir el payload
             payload = {
-                "model": "klusterai/Meta-Llama-3.1-8B-Instruct-Turbo",  # Cambiado al nuevo modelo
+                "model": "klusterai/Meta-Llama-3.1-405B-Instruct-Turbo",  # Cambiado al nuevo modelo
                 "max_completion_tokens": 1000,
                 "temperature": 0.8,
                 "top_p": 1,
